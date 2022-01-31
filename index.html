@@ -1,274 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio Website-Brad</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <script src="script.js"></script>
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Brad</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Arjun Das</title>
+  </head>
+  <body>
+    <nav>
+        <h1>ARJUN DAS</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
     </nav>
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Hi, it's me Brad</h2>
-                <p class="hero_desc">I am a professional freelancer in New York City</p>
-            </div>
-            </div>
+    <section class="hero" id="about">
+        <img
+          src="assets/images/wfh_1.svg"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate_animated">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            My name is Arjun Das. I live in Mumbai, India.
+            I am sophomore at Vellore Institute of Technology, 
+            pursuing Computer Science and Engineering. My specialization
+            is in Data Science.
+          </p>
         </div>
-    </section>
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="Screenshot.png" class= "imageAboutPage" alt="">
-                </div>
-                <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Arjun Das</li>
-                                <li>Age: 19</li>
-                                <li>Occupation: Student, Computer Science</li>
-
-                            </ul>
-                        </div>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+  </section>
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          I am a fire accident survivor and I am a child of a single mother.
+        </p>
+        <p>
+          I have seen many hardships and my and I have emerged like victorious like a phoenix from these problems.
+        </p>
+        <p>
+          I have ophidiophobia, i.e, fear of snakes.
+        </p>
+      </section>
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-python.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-java.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-c++.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
         </div>
-    </section>
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=navi+mumbai&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                </div>
-            </div>
+      </section>
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20200501212758/DRAM1.png"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">DRAM Addressing Attack</h3>
+            <p class="project-details">
+              We performed a cross-CPU side-channel attack to exploit the DRAM bank's physical address and mapping 
+              using reverse engineering methods on a 9th Gen Intel i7 processor.
+            </p>
+            <a href="" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="https://user-images.githubusercontent.com/83835729/132753758-d3334562-56e8-46b8-87ce-6dcc64ad65e8.png"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Forest Cover Classification</h3>
+            <p class="project-details">
+              We improved on the prediction accuracy of the forest cover type in Roosevelt Forest
+              Colorado using Deep Learning
+            </p>
+            <a href="https://github.com/arjundas1/Forest-Cover-Prediction-using-Classification-Mining-Techniques-and-Deep-Learning" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/Cover2.jpeg"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Medical Specialist Recommender</h3>
+            <p class="project-details">
+              This recommendation system helps those patients who are unsure as to which medical
+              specialist must they go to in order to get the correct treatment.
+            </p>
+            <a href="https://github.com/arjundas1/AI-based-Medical-Specialist-Recommendation-System" target="_blank" class="project-link">Check it Out</a>
+          </div>
         </div>
-    </section>
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="social-icons mt-4">
-                <a href="https://www.instagram.com/arjun_._das" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.github.com/arjundas1" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/arjundas1" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-    </body> 
+      </section>
+    <div class="socials">
+        <a href="#" target="_blank"
+          ><img
+            src="assets/icons/icons8-twitter-circled.gif"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="assets/icons/icons8-instagram.gif"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+        /></a>
+    <script src="assets/js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
